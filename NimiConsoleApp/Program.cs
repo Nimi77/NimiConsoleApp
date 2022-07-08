@@ -57,6 +57,116 @@ namespace NimiConsoleApp
             Console.WriteLine(m);
             Console.WriteLine(n);
             Console.WriteLine(l);
+            
+            //Week 3
+            int myAge = 20;
+            Console.WriteLine(myAge);
+            myAge += 2;
+            Console.WriteLine(myAge);
+            int firstRemainder = 88 % 5;
+            Console.WriteLine(firstRemainder);
+
+            Console.WriteLine("This is a Calculator App");
+            Console.Write("Type in your first number: ");
+            string firstNumber = Console.ReadLine();
+            //int firstNumber = int.Parse(Console.ReadLine());
+            Console.Write("Type in your second number: ");
+            string secondNumber = Console.ReadLine();
+            string result = firstNumber + secondNumber;
+
+            Console.WriteLine("The answer is " + result);
+
+            //Week4
+            //<<<Decision making/Conditionals>>
+            if (false)
+            {
+                Console.WriteLine("The statement is true");
+            }
+            else if (true)
+            {
+                Console.WriteLine("The second statement is false");
+            }
+            else
+            {
+                Console.WriteLine("The statement is false");
+            }
+
+            //<Realtional Operators>>
+            if (2 == 5)
+            {
+                Console.WriteLine("They are equal");
+            }
+            else if (2 > 1)
+            {
+                Console.WriteLine("Two is greater than 1");
+            }
+            else if (5 >= 5)
+            {
+                Console.WriteLine("5 is greater than or equal to 5");
+
+            }
+            else
+            {
+                Console.WriteLine("They are not equal");
+            }
+
+            //<<<Logical operator>>>
+            if (true && true)
+            {
+                Console.WriteLine("AND operator is true");
+            }
+            if (false || false)
+            {
+                Console.WriteLine("OR operator is false");
+            }
+
+            if (true && true)
+            {
+                Console.WriteLine("1 is true");
+            }
+            else
+            {
+                Console.WriteLine("1 is false");
+            }
+
+            //A Simple App
+            Console.WriteLine("Welcome to Veepay");
+            Console.Write("Will you like to sign up: ");
+            string signup = Console.ReadLine();
+            if (signup == "Yes")
+            {
+                Console.WriteLine("Click the button below to create an account.");
+                Console.WriteLine("Input your information.");
+
+                Console.Write("Name:  ");
+                string name = Console.ReadLine();
+
+                Console.Write("How old are you? ");
+                int age = int.Parse(Console.ReadLine());
+                if (age >= 18)
+                {
+                    Console.Write("Phone Number:  ");
+                    string phoneNumber = Console.ReadLine();
+                }
+                else
+                {
+                    Console.Write("You are not allowed to create an account.");
+                }
+                Console.Write("Account Number: ");
+                string acctNo = Console.ReadLine();
+                Console.Write("Create a password: ");
+                string password = Console.ReadLine();
+                Console.WriteLine("Account created, login to your account");
+            }
+            else
+            {
+                Console.WriteLine("Already have an account?, then Sign in now.");
+                Console.Write("Email Address or Mobile Number:  ");
+                string emailAddress = Console.ReadLine();
+                Console.Write("Password: ");
+                string password = Console.ReadLine();
+                Console.WriteLine("Sign in");
+            }
 
 
             Console.ReadKey();
